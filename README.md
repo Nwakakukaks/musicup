@@ -13,6 +13,6 @@ An rsvp dapp built with reach and deployed on algorand network
 - Algorand network
 
 # Contact
-Name: Winner Nwakaku
-Email: winnernwakaku123@gmail.com
-Discord: chukwuemeka#0889
+- Name: Winner Nwakaku
+- Email: winnernwakaku123@gmail.com
+- Discord: chukwuemeka#0889
