@@ -10,7 +10,7 @@ const deadline = stdlib.connector === 'CFX' ? 500 : 250;
 const ctcD = accD.contract(backend);
 
 try {
-  await ctcD.p.Admin({
+  await ctcD.p.Organizer({
     deadline,
     price: stdlib.parseCurrency(25),
     ready: () => {
@@ -24,7 +24,7 @@ try {
   }
 }
 
-const users = await stdlib.newTestAccounts(5, sbal);
+const users = await stdlib.newTestAccounts(3, sbal);
 
 const willError = async (f) => {
   let e;
@@ -45,7 +45,7 @@ const rsvp = async (whoi) => {
   const who = users[whoi];
   const ctc = ctcWho(whoi);
   console.log('RSVP of', stdlib.formatAddress(who));
-  await ctc.apis.Attendee.iWillGo();
+  await ctc.apis.RSVPier.iWillGo();
 };
 const do_checkin = async (ctc, whoi) => {
   const who = users[whoi];
