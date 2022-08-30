@@ -6,6 +6,8 @@ An rsvp dapp built with reach and deployed on algorand network
 - Event organizer sets the RSVP fee
 - Anyone with event contract can RSVP for event
 - Event organizer performs check-in for attendees.
+- Platform takes platform fee for every RSVP
+- Leftover balances are shared by the organizer and platform
 
 # Tech stack
 - Reach.sh
